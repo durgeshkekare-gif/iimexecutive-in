@@ -41,5 +41,18 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.iimexecutive.in"
+        }
+      ],
+      "destination": "https://iimexecutive.in/:path*",
+      "permanent": true
+    }
   ]
 }

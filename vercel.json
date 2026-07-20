@@ -41,18 +41,5 @@
         }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/((?!assets/|api/|favicon|robots|sitemap).*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.iimexecutive.in"
-        }
-      ],
-      "destination": "https://iimexecutive.in/:path*",
-      "permanent": true
-    }
   ]
 }

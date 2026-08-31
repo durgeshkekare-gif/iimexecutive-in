@@ -3,14 +3,41 @@
   "trailingSlash": false,
   "buildCommand": null,
   "outputDirectory": ".",
+  "functions": {
+    "api/lead.js": {
+      "memory": 512,
+      "maxDuration": 10
+    }
+  },
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "iimexecutive.in"
+        }
+      ],
+      "destination": "https://www.iimexecutive.in/$1",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/blog/:slug",
       "destination": "/blog/:slug.html"
     },
     {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
       "source": "/programs",
       "destination": "/programs/index.html"
+    },
+    {
+      "source": "/compare",
+      "destination": "/compare.html"
     }
   ],
   "headers": [
